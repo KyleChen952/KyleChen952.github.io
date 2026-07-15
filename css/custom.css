@@ -1,0 +1,13 @@
+/* 设置网页整体背景色为护眼黄 */
+body {
+    background-color: #F7F3E9 !important;
+}
+
+/* 确保主要内容区域也使用该颜色 */
+#body-wrap {
+    background-color: transparent !important;
+}
+
+#content-inner {
+    background-color: #F7F3E9 !important;
+}
