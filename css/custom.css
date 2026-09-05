@@ -1,13 +1,21 @@
-/* 设置网页整体背景色为护眼黄 */
-body {
+/* ================= 白天模式（护眼黄） ================= */
+[data-theme='light'] body,
+[data-theme='light'] #content-inner {
     background-color: #F7F3E9 !important;
 }
 
-/* 确保主要内容区域也使用该颜色 */
+/* ================= 黑夜模式（暗蓝色） ================= */
+[data-theme='dark'] {
+    --global-bg: #0b132b; /* 主主题变量：深蓝背景 */
+    --card-bg: #1c2541;   /* 卡片背景：稍浅的暗蓝（可按需调整） */
+}
+
+[data-theme='dark'] body,
+[data-theme='dark'] #content-inner {
+    background-color: #0b132b !important;
+}
+
+/* 保持内容区域透明度兼容 */
 #body-wrap {
     background-color: transparent !important;
-}
-
-#content-inner {
-    background-color: #F7F3E9 !important;
 }
